@@ -1,0 +1,574 @@
+/*
+    Template Name: Exdos - Creative Agency & Portfolio HTML Template
+    Author: Theme_Shadow
+    Support: https://help.themeshadow.net/support/
+    Description: Liko - Creative Agency & Portfolio HTML Template
+    Version: 1.0
+*/
+/* 
+----------- TABLE OF CONTENTS ------------
+
+    01. THEME CSS
+	-----------------
+		1.1 Theme Reset
+		1.2 Common Classes
+		1.3 Default Spacing
+
+    02. COMPONENTS css
+	-----------------
+		2.1 Ts Button
+		2.2 Section title
+
+    03. HEADER CSS
+	-----------------
+		3.1 Header Style 1
+
+	04. MENU CSS
+	---------------------------------
+		4.1 Main menu css
+
+	05. BLOG CSS
+	---------------------------------
+	    5.1 Ts Blog Section
+
+	06. FOOTER CSS
+	---------------------------------
+		6.1 Footer Style 1
+
+	07. PAGES CSS
+	---------------------------------
+		7.1 Ts hero section
+		7.2 Ts About section
+		7.3 Ts Newsletter section
+		7.4 Ts Service section
+		7.5 Ts Tab Slider section
+		7.6 Ts Testimonial section
+		7.7 Ts Clients Brand section
+		7.8 Ts Team section
+		7.9 Ts Award section
+		7.10 Ts Funfact section
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap");
+/* Responsive Query Setup*/
+:root {
+  --ts-theme-primary: #0057fc;
+  --ts-theme-secondary: #ffe815;
+  --ts-theme-tertiary: #FF5B15;
+  --ts-theme-accent: #ffd06c;
+  --ts-theme-accent-2: #FBF6EF;
+  --ts-theme-accent-3: #001C52;
+  --ts-theme-accent-4: #FFF4EE;
+  --ts-heading-dark: #0a0e1a;
+  --ts-heading-light: #ffffff;
+  --ts-paragraph-dark: #57595c;
+  --ts-paragraph-light: #b1b4ba;
+  --ts-border-color: hsla(0, 0%, 100%, 0.2);
+  --ts-border-dark: #57595c;
+  --ts-common-dark: #0a0e1a;
+  --ts-common-dark-solid: #000000;
+  --ts-common-light: #b1b4ba;
+  --ts-common-light-solid: #ffffff;
+  --ts-common-gray: #57595c;
+  --ts-ff-body: 'DM Sans', sans-serif;
+  --ts-ff-heading: 'federo', sans-serif;
+  --ts-ff-p: 'DM Sans', sans-serif;
+  --ts-ff-fontawesome: 'Font Awesome 5 Pro';
+  --ts-ff-flaticon: 'flaticon_exdos';
+  --ts-fz-body: 17px;
+  --ts-fz-p: 17px;
+  --ts-fz-h1: 60px;
+  --ts-fz-h2: 60px;
+  --ts-fz-h3: 30px;
+  --ts-fz-h4: 20px;
+  --ts-fz-h5: 20px;
+  --ts-fz-h6: 20px;
+}
+
+/*==================
+ 1.1 Theme Reset
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--ts-fz-body);
+  font-family: var(--ts-ff-body);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--ts-ff-body);
+  font-size: var(--ts-fz-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+p {
+  color: var(--ts-paragraph-dark);
+  font-family: var(--ts-ff-body);
+  font-size: var(--ts-fz-body);
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--ts-ff-heading);
+  transition: 0.2s;
+}
+a:hover {
+  color: var(--ts-common-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ts-heading-dark);
+  font-family: var(--ts-ff-heading);
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--ts-fz-h1);
+}
+
+h2 {
+  font-size: var(--ts-fz-h2);
+}
+
+h3 {
+  font-size: var(--ts-fz-h3);
+}
+
+h4 {
+  font-size: var(--ts-fz-h4);
+}
+
+h5 {
+  font-size: var(--ts-fz-h5);
+}
+
+h6 {
+  font-size: var(--ts-fz-h6);
+}
+
+.table {
+  --bs-table-bg: unset;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+input[type=url],
+textarea {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: var(--ts-ff-body);
+  border: none;
+  border-bottom: 1px solid var(--ts-common-dark);
+  background-color: transparent;
+  outline: none;
+  height: 56px;
+  width: 100%;
+}
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=number]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=url]::-moz-placeholder,
+textarea::-moz-placeholder { /* Firefox 19+ */
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=url]:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* IE 10+ */
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=number]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=url]:-moz-placeholder,
+textarea:-moz-placeholder { /* Firefox 18- */
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=url]:focus,
+textarea:focus {
+  background-color: transparent;
+}
+input[type=text]:focus::placeholder,
+input[type=email]:focus::placeholder,
+input[type=tel]:focus::placeholder,
+input[type=number]:focus::placeholder,
+input[type=password]:focus::placeholder,
+input[type=url]:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0;
+}
+
+textarea {
+  line-height: 1.4;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea:focus::placeholder {
+  opacity: 0;
+}
+
+input[type=color] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 50%;
+}
+
+*::-moz-selection {
+  background: var(--ts-common-dark);
+  color: var(--ts-common-light-solid);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--ts-common-dark);
+  color: var(--ts-common-light-solid);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--ts-common-dark);
+  color: var(--ts-common-light-solid);
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: var(--ts-common-dark);
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: var(--ts-common-dark);
+  font-size: 14px;
+  opacity: 1;
+}
+
+/*==================
+ 1.1 Common Classes
+*/
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.gx-5 {
+  --bs-gutter-x: 5px;
+}
+
+.gx-10 {
+  --bs-gutter-x: 10px;
+}
+
+.gx-15 {
+  --bs-gutter-x: 15px;
+}
+
+.gx-20 {
+  --bs-gutter-x: 20px;
+}
+
+.gx-25 {
+  --bs-gutter-x: 25px;
+}
+
+.gx-30 {
+  --bs-gutter-x: 30px;
+}
+
+.gx-35 {
+  --bs-gutter-x: 35px;
+}
+
+.gx-40 {
+  --bs-gutter-x: 40px;
+}
+
+.gx-45 {
+  --bs-gutter-x: 45px;
+}
+
+.gx-50 {
+  --bs-gutter-x: 50px;
+}
+
+.gx-60 {
+  --bs-gutter-x: 60px;
+}
+
+.gx-75 {
+  --bs-gutter-x: 75px;
+}
+
+.gx-80 {
+  --bs-gutter-x: 80px;
+}
+
+.gx-140 {
+  --bs-gutter-x: 140px;
+}
+
+.gx-90 {
+  --bs-gutter-x: 90px;
+}
+
+.z-index {
+  position: relative;
+  z-index: 1;
+}
+
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-4 {
+  position: relative;
+  z-index: 4;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+.z-index-6 {
+  position: relative;
+  z-index: 6;
+}
+
+.z-index-7 {
+  position: relative;
+  z-index: 7;
+}
+
+.z-index-8 {
+  position: relative;
+  z-index: 8;
+}
+
+.z-index-9 {
+  position: relative;
+  z-index: 9;
+}
+
+.ts-uppercase {
+  text-transform: uppercase;
+}
+
+.ts-bg-primary {
+  background-color: var(--ts-theme-primary);
+}
+.ts-bg-secondary {
+  background-color: var(--ts-theme-secondary);
+}
+.ts-bg-tertiary {
+  background: var(--ts-theme-tertiary);
+}
+.ts-bg-light {
+  background: var(--ts-common-light-solid);
+}
+.ts-bg-dark {
+  background: var(--ts-common-dark);
+}
+.ts-bg-iceberg {
+  background-color: #d6f0ff;
+}
+.ts-bg-sandy-beach {
+  background: #ffe9c9;
+}
+.ts-bg-amour {
+  background: #ffe4fb;
+}
+.ts-bg-white-rock {
+  background: #e2ead7;
+}
+
+.ts-text-light {
+  color: var(--ts-common-light-solid);
+}
+.ts-text-right {
+  text-align: right;
+}
+
+.ts-border {
+  border: 1px solid var(--ts-border-dark);
+}
+
+.b-radius-5 {
+  border-radius: 10px;
+}
+.b-radius-5 img {
+  border-radius: 10px;
+}
+.b-radius-10 {
+  border-radius: 10px;
+}
+.b-radius-10 img {
+  border-radius: 10px;
+}
+.b-radius-15 {
+  border-radius: 15px;
+}
+.b-radius-15 img {
+  border-radius: 15px;
+}
+.b-radius-20 {
+  border-radius: 20px;
+}
+.b-radius-20 img {
+  border-radius: 20px;
+}
+
+.ts-social > li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+}
+.ts-social > li > a {
+  color: var(--ts-common-dark);
+  font-size: 25px;
+  transition: 0.3s;
+}
+.ts-social > li > a:hover {
+  color: var(--ts-theme-primary);
+}
+
+/*==================
+ 2.1 Ts Button
+*/
+/*==================
+ 3.1 Header Style 01
+*/
+/*==================
+ 7.1 Ts hero section
+*/
+
+/*# sourceMappingURL=style.css.map */

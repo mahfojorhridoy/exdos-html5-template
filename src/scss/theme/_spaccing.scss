@@ -1,0 +1,69 @@
+@use "../base/" as *;
+//margin
+
+@for $i from 1 through $space-count {
+  .mx-#{$i * 5} {
+    margin-left: calc($i * 5px);
+    margin-right: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .my-#{$i * 5} {
+    margin-top: calc($i * 5px);
+    margin-bottom: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .ml-#{$i * 5} {
+    margin-left: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .mr-#{$i * 5} {
+    margin-right: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .mt-#{$i * 5} {
+    margin-top: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .mb-#{$i * 5} {
+    margin-bottom: calc($i * 5px);
+  }
+}
+
+//padding
+@for $i from 1 through $space-count {
+  .px-#{$i * 5} {
+    padding-left: calc($i * 5px);
+    padding-right: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .py-#{$i * 5} {
+    padding-top: calc($i * 5px);
+    padding-bottom: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .pl-#{$i * 5} {
+    padding-left: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .pr-#{$i * 5} {
+    padding-right: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .pt-#{$i * 5} {
+    padding-top: calc($i * 5px);
+  }
+}
+@for $i from 1 through $space-count {
+  .pb-#{$i * 5} {
+    padding-bottom: calc($i * 5px);
+  }
+}

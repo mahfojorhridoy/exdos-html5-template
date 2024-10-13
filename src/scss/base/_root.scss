@@ -1,0 +1,23 @@
+@use "./typography" as *;
+@use "./variable" as *;
+
+:root {
+  //color declare
+  @each $color, $shades in $color {
+    @each $shade, $value in $shades {
+      --#{$theme-prefix}-#{$color}-#{$shade}: #{$value};
+    }
+  }
+  //font family declare
+  @each $ff, $shades in $font-family {
+    @each $shade, $value in $shades {
+      --#{$theme-prefix}-#{$ff}-#{$shade}: #{$value};
+    }
+  }
+  //font size declare
+  @each $fz, $shades in $font-size {
+    @each $shade, $value in $shades {
+      --#{$theme-prefix}-#{$fz}-#{$shade}: #{$value};
+    }
+  }
+}

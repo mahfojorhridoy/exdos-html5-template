@@ -1,0 +1,200 @@
+@use "../base/" as *;
+/*==================
+ 1.1 Common Classes
+*/
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.fix {
+  overflow: hidden;
+}
+
+.gx-5 {
+  --bs-gutter-x: 5px;
+}
+.gx-10 {
+  --bs-gutter-x: 10px;
+}
+.gx-15 {
+  --bs-gutter-x: 15px;
+}
+.gx-20 {
+  --bs-gutter-x: 20px;
+}
+.gx-25 {
+  --bs-gutter-x: 25px;
+}
+.gx-30 {
+  --bs-gutter-x: 30px;
+}
+.gx-35 {
+  --bs-gutter-x: 35px;
+}
+.gx-40 {
+  --bs-gutter-x: 40px;
+}
+.gx-45 {
+  --bs-gutter-x: 45px;
+}
+.gx-50 {
+  --bs-gutter-x: 50px;
+  //   @media #{$xxl} {
+  //     --bs-gutter-x: 30px;
+  //   }
+}
+.gx-60 {
+  --bs-gutter-x: 60px;
+}
+.gx-75 {
+  --bs-gutter-x: 75px;
+}
+.gx-80 {
+  --bs-gutter-x: 80px;
+}
+.gx-140 {
+  --bs-gutter-x: 140px;
+  //   @media #{$md} {
+  //     --bs-gutter-x: 40px;
+  //   }
+}
+.gx-90 {
+  --bs-gutter-x: 90px;
+
+  //   @media #{$xl} {
+  //     --bs-gutter-x: 30px;
+  //   }
+  //   @media #{$lg,$md} {
+  //     --bs-gutter-x: 50px;
+  //   }
+}
+
+.z-index {
+  position: relative;
+  z-index: 1;
+}
+.z-index-2 {
+  position: relative;
+  z-index: 2;
+}
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+.z-index-4 {
+  position: relative;
+  z-index: 4;
+}
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+.z-index-6 {
+  position: relative;
+  z-index: 6;
+}
+.z-index-7 {
+  position: relative;
+  z-index: 7;
+}
+.z-index-8 {
+  position: relative;
+  z-index: 8;
+}
+.z-index-9 {
+  position: relative;
+  z-index: 9;
+}
+.ts-uppercase {
+  text-transform: uppercase;
+}
+.ts-bg {
+  &-primary {
+    background-color: var(--ts-theme-primary);
+  }
+  &-secondary {
+    background-color: var(--ts-theme-secondary);
+  }
+  &-tertiary {
+    background: var(--ts-theme-tertiary);
+  }
+  &-light {
+    background: var(--ts-common-light-solid);
+  }
+  &-dark {
+    background: var(--ts-common-dark);
+  }
+  &-iceberg {
+    background-color: #d6f0ff;
+  }
+  &-sandy-beach {
+    background: #ffe9c9;
+  }
+  &-amour {
+    background: #ffe4fb;
+  }
+  &-white-rock {
+    background: #e2ead7;
+  }
+}
+.ts-text {
+  &-light {
+    color: var(--ts-common-light-solid);
+  }
+  &-right {
+    text-align: right;
+  }
+}
+.ts-border {
+  border: 1px solid var(--ts-border-dark);
+}
+.b-radius {
+  &-5 {
+    border-radius: 10px;
+
+    & img {
+      border-radius: 10px;
+    }
+  }
+  &-10 {
+    border-radius: 10px;
+
+    & img {
+      border-radius: 10px;
+    }
+  }
+  &-15 {
+    border-radius: 15px;
+
+    & img {
+      border-radius: 15px;
+    }
+  }
+  &-20 {
+    border-radius: 20px;
+
+    & img {
+      border-radius: 20px;
+    }
+  }
+}
+.ts-social {
+  & > li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+
+    & > a {
+      color: var(--ts-common-dark);
+      font-size: 25px;
+      transition: 0.3s;
+
+      &:hover {
+        color: var(--ts-theme-primary);
+      }
+    }
+  }
+}

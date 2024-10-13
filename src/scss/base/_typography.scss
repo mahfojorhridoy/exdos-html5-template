@@ -1,0 +1,27 @@
+//font url here
+$font-url: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap";
+
+//font family
+$font-family: (
+  "ff": (
+    "body": "'DM Sans', sans-serif",
+    "heading": "'federo', sans-serif",
+    "p": "'DM Sans', sans-serif",
+    "fontawesome": "'Font Awesome 5 Pro'",
+    "flaticon": "'flaticon_exdos'",
+  ),
+);
+
+//font size
+$font-size: (
+  "fz": (
+    "body": 17px,
+    "p": 17px,
+    "h1": 60px,
+    "h2": 60px,
+    "h3": 30px,
+    "h4": 20px,
+    "h5": 20px,
+    "h6": 20px,
+  ),
+);

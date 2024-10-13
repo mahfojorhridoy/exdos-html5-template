@@ -1,0 +1,65 @@
+//theme color declaration
+$theme-primary: #0057fc;
+$theme-secondary: #ffe815;
+$theme-tertiary: #FF5B15;
+$theme-accent: #ffd06c;
+$theme-accent-2: #FBF6EF;
+$theme-accent-3: #001C52;
+$theme-accent-4: #FFF4EE;
+
+//theme common color declaration
+$common-dark: #0a0e1a;
+$common-dark-solid: #000000;
+$common-light: #b1b4ba;
+$common-light-solid: #ffffff;
+$common-light-gray: #57595c;
+
+//theme border color declaration
+$theme-border: hsla(0, 0%, 100%, 0.2);
+
+//color root generator
+$color: (
+  "theme": (
+    "primary": $theme-primary,
+    "secondary": $theme-secondary,
+    "tertiary": $theme-tertiary,
+    "accent": $theme-accent,
+    "accent-2": $theme-accent-2,
+    "accent-3": $theme-accent-3,
+    "accent-4": $theme-accent-4,
+  ),
+
+  "heading": (
+    "dark": $common-dark,
+    "light": $common-light-solid,
+  ),
+
+  "paragraph": (
+    "dark": $common-light-gray,
+    "light": $common-light,
+  ),
+  "border": (
+    "color": $theme-border,
+    "dark": $common-light-gray,
+  ),
+  "common": (
+    "dark": $common-dark,
+    "dark-solid": $common-dark-solid,
+    "light": $common-light,
+    "light-solid": $common-light-solid,
+    "gray": $common-light-gray,
+  ),
+);
+
+//theme-prefix
+$theme-prefix: "ts";
+$space-count: 50;
+
+
+/* Responsive Query Setup*/
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1660px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399.99px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1199.99px)';
+$md: 'only screen and (min-width: 768px) and (max-width: 991.99px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767.99px)'; 
+$xs: '(max-width: 767.99px)';
