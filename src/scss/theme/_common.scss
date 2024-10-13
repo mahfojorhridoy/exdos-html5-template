@@ -3,114 +3,149 @@
  1.1 Common Classes
 */
 
-.p-relative {
-  position: relative;
+.p {
+  &-relative {
+    position: relative;
+  }
+  &-absolute {
+    position: absolute;
+  }
 }
-.p-absolute {
-  position: absolute;
-}
-.fix {
+.ts-fix {
   overflow: hidden;
 }
 
-.gx-5 {
-  --bs-gutter-x: 5px;
-}
-.gx-10 {
-  --bs-gutter-x: 10px;
-}
-.gx-15 {
-  --bs-gutter-x: 15px;
-}
-.gx-20 {
-  --bs-gutter-x: 20px;
-}
-.gx-25 {
-  --bs-gutter-x: 25px;
-}
-.gx-30 {
-  --bs-gutter-x: 30px;
-}
-.gx-35 {
-  --bs-gutter-x: 35px;
-}
-.gx-40 {
-  --bs-gutter-x: 40px;
-}
-.gx-45 {
-  --bs-gutter-x: 45px;
-}
-.gx-50 {
-  --bs-gutter-x: 50px;
-  //   @media #{$xxl} {
-  //     --bs-gutter-x: 30px;
-  //   }
-}
-.gx-60 {
-  --bs-gutter-x: 60px;
-}
-.gx-75 {
-  --bs-gutter-x: 75px;
-}
-.gx-80 {
-  --bs-gutter-x: 80px;
-}
-.gx-140 {
-  --bs-gutter-x: 140px;
-  //   @media #{$md} {
-  //     --bs-gutter-x: 40px;
-  //   }
-}
-.gx-90 {
-  --bs-gutter-x: 90px;
-
-  //   @media #{$xl} {
-  //     --bs-gutter-x: 30px;
-  //   }
-  //   @media #{$lg,$md} {
-  //     --bs-gutter-x: 50px;
-  //   }
+.gx {
+  &-5 {
+    --bs-gutter-x: 5px;
+  }
+  &-10 {
+    --bs-gutter-x: 10px;
+  }
+  &-15 {
+    --bs-gutter-x: 15px;
+  }
+  &-20 {
+    --bs-gutter-x: 20px;
+  }
+  &-25 {
+    --bs-gutter-x: 25px;
+  }
+  &-30 {
+    --bs-gutter-x: 30px;
+  }
+  &-35 {
+    --bs-gutter-x: 35px;
+  }
+  &-40 {
+    --bs-gutter-x: 40px;
+  }
+  &-45 {
+    --bs-gutter-x: 45px;
+  }
+  &-50 {
+    --bs-gutter-x: 50px;
+  }
+  &-55 {
+    --bs-gutter-x: 55px;
+  }
+  &-60 {
+    --bs-gutter-x: 60px;
+  }
+  &-65 {
+    --bs-gutter-x: 65px;
+  }
+  &-70 {
+    --bs-gutter-x: 70px;
+  }
+  &-75 {
+    --bs-gutter-x: 75px;
+  }
+  &-80 {
+    --bs-gutter-x: 80px;
+  }
+  &-85 {
+    --bs-gutter-x: 85px;
+  }
+  &-90 {
+    --bs-gutter-x: 90px;
+  }
+  &-95 {
+    --bs-gutter-x: 95px;
+  }
+  &-100 {
+    --bs-gutter-x: 100px;
+  }
+  &-105 {
+    --bs-gutter-x: 105px;
+  }
+  &-110 {
+    --bs-gutter-x: 110px;
+  }
 }
 
 .z-index {
   position: relative;
   z-index: 1;
+
+  &-2 {
+    position: relative;
+    z-index: 2;
+  }
+  &-3 {
+    position: relative;
+    z-index: 3;
+  }
+  &-4 {
+    position: relative;
+    z-index: 4;
+  }
+  &-5 {
+    position: relative;
+    z-index: 5;
+  }
+  &-6 {
+    position: relative;
+    z-index: 6;
+  }
+  &-7 {
+    position: relative;
+    z-index: 7;
+  }
+  &-8 {
+    position: relative;
+    z-index: 8;
+  }
+  &-9 {
+    position: relative;
+    z-index: 9;
+  }
 }
-.z-index-2 {
-  position: relative;
-  z-index: 2;
+
+.ts-text {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-capitalize {
+    text-transform: capitalize;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-light {
+    color: var(--ts-common-light);
+  }
+  &-dark {
+    color: var(--ts-theme-dark);
+  }
 }
-.z-index-3 {
-  position: relative;
-  z-index: 3;
-}
-.z-index-4 {
-  position: relative;
-  z-index: 4;
-}
-.z-index-5 {
-  position: relative;
-  z-index: 5;
-}
-.z-index-6 {
-  position: relative;
-  z-index: 6;
-}
-.z-index-7 {
-  position: relative;
-  z-index: 7;
-}
-.z-index-8 {
-  position: relative;
-  z-index: 8;
-}
-.z-index-9 {
-  position: relative;
-  z-index: 9;
-}
-.ts-uppercase {
-  text-transform: uppercase;
-}
+
 .ts-bg {
   &-primary {
     background-color: var(--ts-theme-primary);
@@ -122,79 +157,45 @@
     background: var(--ts-theme-tertiary);
   }
   &-light {
-    background: var(--ts-common-light-solid);
+    background: var(--ts-common-light);
   }
   &-dark {
-    background: var(--ts-common-dark);
+    background: var(--ts-theme-dark);
   }
   &-iceberg {
-    background-color: #d6f0ff;
+    background-color: $iceberg;
   }
-  &-sandy-beach {
-    background: #ffe9c9;
+  &-sandyBeach {
+    background: $sandyBeach;
   }
   &-amour {
-    background: #ffe4fb;
+    background: $amour;
   }
-  &-white-rock {
-    background: #e2ead7;
-  }
-}
-.ts-text {
-  &-light {
-    color: var(--ts-common-light-solid);
-  }
-  &-right {
-    text-align: right;
+  &-whiteRock {
+    background: $whiteRock;
   }
 }
 .ts-border {
-  border: 1px solid var(--ts-border-dark);
+  border: 1px solid var(--ts-paragraph-dark);
 }
-.b-radius {
-  &-5 {
-    border-radius: 10px;
 
-    & img {
-      border-radius: 10px;
-    }
+.ts-br {
+  &-5 {
+    border-radius: 5px;
   }
   &-10 {
     border-radius: 10px;
-
-    & img {
-      border-radius: 10px;
-    }
   }
   &-15 {
     border-radius: 15px;
-
-    & img {
-      border-radius: 15px;
-    }
   }
   &-20 {
     border-radius: 20px;
-
-    & img {
-      border-radius: 20px;
-    }
   }
-}
-.ts-social {
-  & > li {
-    display: inline-block;
-    list-style: none;
-    margin-right: 15px;
-
-    & > a {
-      color: var(--ts-common-dark);
-      font-size: 25px;
-      transition: 0.3s;
-
-      &:hover {
-        color: var(--ts-theme-primary);
-      }
-    }
+  &-25 {
+    border-radius: 25px;
+  }
+  &-30 {
+    border-radius: 30px;
   }
 }

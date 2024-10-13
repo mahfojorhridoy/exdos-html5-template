@@ -13,6 +13,7 @@
 }
 html {
   box-sizing: border-box;
+  font-family: var(--ts-ff-body);
 }
 *,
 *:before,
@@ -45,10 +46,10 @@ p {
 a {
   text-decoration: none;
   font-family: var(--ts-ff-heading);
-  transition: .2s;
+  transition: 0.3s;
 
   &:hover {
-    color: var(--ts-common-light);
+    color: var(--ts-theme-primary);
   }
 }
 
@@ -93,8 +94,11 @@ img {
 ul {
   margin: 0;
   padding: 0;
-}
 
+  & > li {
+    list-style: none;
+  }
+}
 
 // a,
 // button,
@@ -205,23 +209,23 @@ input[type="color"] {
 }
 
 *::-moz-selection {
-  background: var(--ts-common-dark);
-  color: var(--ts-common-light-solid);
+  background: var(--ts-theme-dark);
+  color: var(--ts-common-light);
   text-shadow: none;
 }
 ::-moz-selection {
-  background: var(--ts-common-dark);
-  color: var(--ts-common-light-solid);
+  background: var(--ts-theme-dark);
+  color: var(--ts-common-light);
   text-shadow: none;
 }
 ::selection {
-  background: var(--ts-common-dark);
-  color: var(--ts-common-light-solid);
+  background: var(--ts-theme-dark);
+  color: var(--ts-common-light);
   text-shadow: none;
 }
 
 *::-moz-placeholder {
-  color: var(--ts-common-dark);
+  color: var(--ts-theme-dark);
   font-size: 14px;
   opacity: 1;
 }
